@@ -10,7 +10,7 @@ namespace RegexEx
             //UC5--Regex
             Console.WriteLine("Enter The Password");
             string name= Console.ReadLine();
-            string namepattern = "^[a-zA-z]{8,}$";
+            string namepattern = "^(?=.*[A-Z])[a-zA-Z]{8,}$";
             Regex regex = new Regex(namepattern);
             if(regex.IsMatch(name))
             {
