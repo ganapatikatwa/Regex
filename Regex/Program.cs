@@ -7,10 +7,10 @@ namespace RegexEx
     {
         public static void Main(string[] args)
         {
-            //UC4--Regex
-            Console.WriteLine("Enter The Mobile");
+            //UC5--Regex
+            Console.WriteLine("Enter The Password");
             string name= Console.ReadLine();
-            string namepattern = "^[1-9]{1,2}[ ][6-9]{1}[0-9]{9}$";
+            string namepattern = "^[a-zA-z]{8,}$";
             Regex regex = new Regex(namepattern);
             if(regex.IsMatch(name))
             {
