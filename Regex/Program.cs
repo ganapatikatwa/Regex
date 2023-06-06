@@ -7,12 +7,10 @@ namespace RegexEx
     {
         public static void Main(string[] args)
         {
-            //UC3--Regex
-            // abc.xyz@bl.co.in 
-            Console.WriteLine("Enter The E mail");
+            //UC4--Regex
+            Console.WriteLine("Enter The Mobile");
             string name= Console.ReadLine();
-            string namepattern = "^[0-9a-zA-Z]+[.-_]{0,2}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-z]{2,3}" +
-                "([.][a-zA-Z]{2,3}){0,1}$";
+            string namepattern = "^[1-9]{1,2}[ ][6-9]{1}[0-9]{9}$";
             Regex regex = new Regex(namepattern);
             if(regex.IsMatch(name))
             {
