@@ -10,7 +10,7 @@ namespace RegexEx
             //UC1--Regex
             Console.WriteLine("Enter The Mobie");
             string name= Console.ReadLine();
-            string namepattern = "^[A-Z]{1}[a-z]{2,}";
+            string namepattern = "^[A-Z]{1}[a-z]{2,}[ ][A-Z]{1}[a-z]{2,}";
             Regex regex = new Regex(namepattern);
             if(regex.IsMatch(name))
             {
